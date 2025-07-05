@@ -38,12 +38,12 @@ Check your score now at`
 
 const encodedText=encodeURIComponent(shareText);
 const navigate=useNavigate();
-// const quizLink=encodeURIComponent('')
+const quizLink=encodeURIComponent('https://are-u-enterpenter-xndr.vercel.app/')
 
 const shareLinks={
     whatsapp: `https://wa.me/?text=${encodedText}`,
     twitter: `https://twitter.com/intent/tweet?text=${encodedText}`,
-    // linkedin: `https://www.linkedin.com/sharing/share-offsite/?url=${quizLink}`,
+    linkedin: `https://www.linkedin.com/sharing/share-offsite/?url=${quizLink}`,
     // facebook: `https://www.facebook.com/sharer/sharer.php?u=${quizLink}`, 
 }
 
@@ -69,7 +69,7 @@ const handleClick=()=>{
         <a href={shareLinks.whatsapp} target="_blank" rel="noreferrer">📱 WhatsApp</a> &nbsp;|&nbsp;
         <a href={shareLinks.twitter} target="_blank" rel="noreferrer">🐦 X</a> &nbsp;|&nbsp;
         <a href={shareLinks.linkedin} target="_blank" rel="noreferrer">💼 LinkedIn</a> &nbsp;|&nbsp;
-        <a href={shareLinks.facebook} target="_blank" rel="noreferrer">📘 Facebook</a>
+        {/* <a href={shareLinks.facebook} target="_blank" rel="noreferrer">📘 Facebook</a> */}
       </div>
 
 
