@@ -1,0 +1,77 @@
+/* quiz.css */
+
+.quiz-container {
+  background-color: #000; /* dark background */
+  color: #ff4c4c;          /* red text */
+  min-height: 100vh;
+  width: 100vw;
+  padding: 40px 20px;
+  font-family: 'Segoe UI', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.quiz-container h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.quiz-container h3 {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  color: #ff7373;
+  text-align: center;
+}
+
+.quiz-container .options {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.quiz-container .options button {
+  background-color: transparent;
+  border: 2px solid #ff4c4c;
+  color: #ff4c4c;
+  padding: 12px 20px;
+  font-size: 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.quiz-container .options button:hover,
+.quiz-container .options button:focus {
+  background-color: #ff4c4c;
+  color: #000;
+  transform: scale(1.02);
+}
+
+.quiz-container .navigation-buttons {
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.quiz-container .navigation-buttons button {
+  background-color: #ff4c4c;
+  border: none;
+  color: white;
+  padding: 12px 25px;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.quiz-container .navigation-buttons button:disabled {
+  background-color: #444;
+  cursor: not-allowed;
+}
+
+.quiz-container .navigation-buttons button:hover:not(:disabled) {
+  background-color: #ff1a1a;
+}
