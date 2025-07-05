@@ -45,6 +45,9 @@
 
 /* Responsive styles */
 @media (max-width: 900px) {
+  .home{
+    width: 90vw;
+  }
   .home h1 {
     font-size: 2.5rem;
     margin-bottom: 2rem;
@@ -60,6 +63,9 @@
 }
 
 @media (max-width: 600px) {
+   .home{
+    width: 90vw;
+  }
   .home {
     padding: 10px;
   }
