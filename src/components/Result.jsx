@@ -32,13 +32,13 @@ const Result = () => {
     else{
         text='💼 You prefer stability — and every visionary needs a solid operator.'
     }
-
+const quizLink='https://are-u-enterpenter-xndr.vercel.app/'
 const shareText=`🏆Hey, I scored ${percentage}% on the Entrepreneur Mindset Quiz and earned the badge: "${badge}"! 
-Check your score now at`
+Check your score now at ${quizLink}`
 
 const encodedText=encodeURIComponent(shareText);
 const navigate=useNavigate();
-const quizLink=encodeURIComponent('https://are-u-enterpenter-xndr.vercel.app/')
+
 
 const shareLinks={
     whatsapp: `https://wa.me/?text=${encodedText}`,
