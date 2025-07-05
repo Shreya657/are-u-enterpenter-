@@ -1,10 +1,10 @@
 import { useState } from 'react'
 import './App.css'
-import Quiz from './components/Quiz'
+import Quiz from './components/quiz'
 import { BrowserRouter as Router, Route, Routes, useNavigate } from 'react-router-dom';
 import Result from './components/Result'
 import Home from './components/Home';
-import Quiz from './components/quiz';
+
 
 
 
